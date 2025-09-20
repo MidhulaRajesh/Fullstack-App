@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ece9e6, #ffffff);
+}
+
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 10px;
+  background: linear-gradient(to right, #f3f4f6, #e0e7ff);
+  min-height: 100vh;
+}
+
+
+.dashboard-card {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+}
+
+
+.dashboard-card h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #8398db;
+  margin-bottom: 20px;
+}
+
+
+.readonly-fields,
+.editable-fields,
+.file-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+
+label {
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 90%;
+  background-color: #f9f9f9;
+}
+
+input:disabled {
+  background-color: #e9ecef;
+  color: #495057;
+}
+
+
+.file-section a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.file-section a:hover {
+  text-decoration: underline;
+}
+
+
+.dashboard-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+button.update-btn,
+button.logout-btn {
+  flex: 1;
+  padding: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+ 
+}
+
+button.update-btn {
+  background-color: #28a745;
+  color: white;
+   width: 50%;
+}
+
+button.update-btn:hover {
+  background-color: #218838;
+}
+
+button.logout-btn {
+  background-color: #dc3545;
+  color: white;
+   width: 50%;
+}
+
+button.logout-btn:hover {
+  background-color: #c82333;
+}
+
+
+@media (max-width: 600px) {
+  .dashboard-card {
+    padding: 25px 20px;
+  }
+
+  .dashboard-buttons {
+    flex-direction: column;
+  }
+}
+
+
